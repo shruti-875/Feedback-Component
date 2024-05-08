@@ -1,0 +1,125 @@
+
+
+body {
+    font-family: sans-serif;
+    background-image: url('v.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .back {
+    padding: 60px;
+    background: rgba( 245, 246, 248, 0.8 );
+box-shadow: 0 8px 32px 0 rgba(67, 67, 71, 0.37);
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
+    width: 60%;
+    margin: 200px auto;
+    position: relative;
+  }
+  
+  #app {
+    color: rgba(66, 65, 65, 0.897);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  button[type=button] {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  button[type=button]:hover {
+    background-color: lightgray;
+  }
+  
+  .back button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .rating {
+    text-align: center;
+  }
+  
+  .rating input[type="button"] {
+    width: 70px;
+    height: 60px;
+    margin: 0px; 
+    background: rgba( 245, 246, 248, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 30px;
+    opacity: 0.8;
+    border-radius: 60px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .rating input[type="button"]:hover {
+    background-color: #ffffff; 
+  }
+  
+  .left {
+    color: rgb(21, 21, 21);
+    font-size: 15px;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .right {
+    color: rgb(49, 49, 49);
+    font-size: 15px;
+    position: absolute;
+    right: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type=reset], input[type=submit] {
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    margin: 5px; 
+    background-image: linear-gradient(to bottom, #ffffff, #e0e0e0); 
+    color: cornflowerblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type=reset]:hover {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  input[type=submit] {
+    background-image: linear-gradient(to bottom, #9ab6f3, #235ea2);
+    color: white;
+    border-radius: 6px;
+  }
+
+  input[type=submit]:hover {
+    background-image: linear-gradient(to bottom, #324a70, #1c2e47);
+  }
+
+
+  

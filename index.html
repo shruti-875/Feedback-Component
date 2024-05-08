@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FrontendPro Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="back">
+    <button id="openModalBtn" type="button">✖️</button>
+    <h1 id="app">How likely are you to recommend FrontendPro to someone you know?</h1>
+    <div class="rating">
+      <form id="feedbackForm">
+        <input type="button" value="😠">
+        <input type="button" value="😡">
+        <input type="button" value="😕">
+        <input type="button" value="😐">
+        <input type="button" value="🙂">
+        <input type="button" value="😊">
+        <input type="button" value="😄">
+        <input type="button" value="😃">
+        <input type="button" value="😍">
+        <input type="button" value="🥳">
+      </form>
+    </div><br>
+    <h7 class="left">Not likely us</h7>
+    <h7 class="right">Extremely likely</h7><br><br>
+    <div class="button-container">
+   <input type="reset" value="Cancel" id="cancelBtn">
+    <input type="submit" value="Submit" id="submitBtn"><br>
+    </div>
+  </div>   
+  <script>
+     function redirectToPage() {
+      window.location.href = 'index.html';
+    }
+
+    document.getElementById("cancelBtn").addEventListener("click", function() {
+      alert("Cancelled the review");
+      cancelForm();
+    });
+
+    document.getElementById("submitBtn").addEventListener("click", function() {
+      
+      console.log("Submit button clicked");
+      redirectToPage();
+    });
+
+    var ratingButtons = document.querySelectorAll('.rating input[type="button"]');
+    ratingButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        alert("Thank you for Review");
+      });
+    });
+  </script>
+</body>
+
+</html>
